@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kian Footer</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0A0F1F; /* Dark background */
+            color: #fff; /* White text */
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-top: 1px solid #333; /* Darker border for separation */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .footer div {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .footer h3 {
+            margin-bottom: 10px;
+            color: #00bcd4; /* Light blue */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer a {
+            color: #00bcd4; /* Light blue */
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer a:hover {
+            color: #42C4FF; /* Lighter blue */
+            transform: translateY(-3px); /* Slight upward movement */
+            text-shadow: 0px 4px 10px rgba(66, 196, 255, 0.7); /* Glowing effect */
+        }
+
+        .footer .logo {
+            text-align: center;
+        }
+
+        .footer .logo img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .footer .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+            color: #888; /* Lighter grey */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer div {
+                padding: 10px 0;
+            }
+
+            .footer h3 {
+                text-align: center;
+            }
+
+            .footer ul {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<footer class="footer">
+    <div class="logo">
+        <img src="https://ton.x.com/i/ton/data/grok-attachment/1905513401620520960" alt="E-Kian Logo">
+    </div>
+    <div>
+        <h3>Features</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="docs.html">Company Documents</a></li>
+            <li><a href="market-insights.html">Market Insights</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Official Links</h3>
+        <ul>
+            <li><a href="https://www.e-kian.com/">Website</a></li>
+            <li><a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61574733301859" target="_blank">Facebook</a></li>
+            <li><a href="https://medium.com/@ekianofficial/" target="_blank">Medium</a></li>
+            <li><a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a></li>
+            <li><a href="www.linkedin.com/in/ekianofficial" target="_blank">LinkedIn</a></li>
+            <li><a href="https://t.me/+yghWgBn8zJ1lZjg8" target="_blank">Telegram Announcements</a></li>
+            <li><a href="https://discord.gg/ZCbTZkrmTq" target="_blank">Discord Announcements</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@e-kian.com">info@e-kian.com</a></p>
+        <p>Phone: <a href="tel:+971553705487">+971553705487</a></p>
+    </div>
+</footer>
+<div class="copyright">
+    © Thank you for visiting E-Kian.
+</div>
+
+</body>
+</html>

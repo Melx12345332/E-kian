@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kian - Premier Mystery Shopping</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #07111D;
+            color: #FFFFFF;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            background-color: #07111D;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            z-index: 100;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        header img {
+            height: 45px;
+            transition: transform 0.3s ease;
+            margin-right: 60px;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            margin-left: auto;
+            justify-content: flex-end;
+            margin-right: 40px;
+        }
+
+        nav a, .connect-with-us {
+            color: #42C4FF;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        nav a:hover, .connect-with-us:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        .connect-with-us {
+            background-color: #42C4FF;
+            color: #07111D;
+            cursor: pointer;
+            border: none;
+            padding: 8px 14px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.2s;
+            flex-shrink: 0;
+            position: relative;
+            margin-left: -20px;
+        }
+
+        .connect-with-us:hover {
+            background-color: #00A9FF;
+            transform: scale(1.05);
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero .intro {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #42C4FF;
+        }
+
+        .hero .intro h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero .intro p {
+            font-size: 1.2rem;
+            margin-top: 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://ton.x.com/i/ton/data/grok-attachment/1905328498849579009" alt="E-Kian">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="docs.html">Company Docs</a>
+            <a href="market-insights.html">Market Insights</a>
+            <a href="faq.html">FAQ</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="contact.html" class="cta">Contact Us</a>
+            <div class="connect-with-us">
+                Connect With Us
+                <div class="dropdown">
+                    <a href="https://www.e-kian.com/" target="_blank">Website</a>
+                    <a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a>
+                    <a href="https://www.facebook.com/profile.php?id=61574733301859" target="_blank">Facebook</a>
+                    <a href="https://medium.com/@ekianofficial/" target="_blank">Medium</a>
+                    <a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/ekianofficial" target="_blank">LinkedIn</a>
+                    <a href="https://t.me/+yghWgBn8zJ1lZjg8" target="_blank">Telegram Announcements</a>
+                    <a href="https://discord.gg/ZCbTZkrmTq" target="_blank">Discord Announcements</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay loop muted playsinline>
+            <source src="https://www.e-kian.com/website_version.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="intro">
+            <h1>Elevate Your Business with E-Kian</h1>
+            <p>Experience Premier Mystery Shopping Services in Dubai</p>
+        </div>
+    </section>
+</body>
+</html>

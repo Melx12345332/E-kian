@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Insights</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0A0F1F;
+            color: #42C4FF;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(10, 15, 31, 0.8);
+            border-radius: 25px;
+            width: 80%;
+            max-width: 1100px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #ffffff;
+        }
+
+        h1 span {
+            color: #42C4FF;
+        }
+
+        p {
+            font-size: 1.4em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-weight: 300;
+            color: #D3D7E0;
+        }
+
+        .cta-button {
+            background-color: #42C4FF;
+            color: #0A0F1F;
+            font-size: 1.3em;
+            padding: 20px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 10px 20px rgba(66, 196, 255, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #33a0cc;
+            transform: translateY(-5px);
+        }
+
+        .leadership {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        .leadership-card {
+            background-color: #0A0F1F;
+            color: #42C4FF;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
+            width: 30%;
+            margin-bottom: 30px;
+        }
+
+        .leadership-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.7);
+        }
+
+        .leadership-card h3 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .leadership-card p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #D3D7E0;
+            margin-bottom: 20px;
+        }
+
+        .leadership-card .icon {
+            font-size: 3em;
+            color: #42C4FF;
+            margin-bottom: 10px;
+        }
+
+        .leadership-card .profile {
+            margin: 20px auto;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #42C4FF;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .leadership-card .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .leadership-card::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            height: 120%;
+            background: #42C4FF;
+            border-radius: 50%;
+            opacity: 0.1;
+            transition: opacity 0.3s ease;
+        }
+
+        .leadership-card:hover::before {
+            opacity: 0.3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.8em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            .cta-button {
+                padding: 18px 28px;
+            }
+
+            .leadership {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .leadership-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><span>Introduction to the<span></span> Leadership Team</h1>
+        <p>Meet the visionary leaders who drive our company's mission and success. Our leadership team brings diverse expertise and a shared commitment to excellence.</p>
+        <div class="leadership">
+            <div class="leadership-card">
+                <div class="profile">
+                    <img src="https://ton.x.com/i/ton/data/grok-attachment/1905330229356494852" alt="Founder Profile Picture">
+                </div>
+                <h3>Mohammed Elhelaly</h3>
+                <p>Founder & CEO</p>
+                <div class="icon">💬</div>
+                <h3>Communication</h3>
+                <p>Effective communication is essential in leadership. It fosters transparency, builds trust, and ensures the success of any team.</p>
+            </div>
+            <div class="leadership-card">
+                <div class="profile">
+                    <img src="https://ton.x.com/i/ton/data/grok-attachment/1905333523667664896" alt=" ">
+                </div>
+                <h3>Seham Sakr</h3>
+                <p>Co-Founder & Strategy Lead</p>
+                <div class="icon">🚀</div>
+                <h3>Vision</h3>
+                <p>Every leader needs a clear vision. It helps guide the team, set goals, and lead the organization to achieve greater success.</p>
+            </div>
+            <div class="leadership-card">
+                <div class="profile">
+                    <img src="https://ton.x.com/i/ton/data/grok-attachment/1905331724315426816" alt="Founder Profile Picture">
+                </div>
+                <h3>Zayed Mohamned </h3>
+                <p>Chief Operating Officer</p>
+                <div class="icon">💡</div>
+                <h3>Decision-Making</h3>
+                <p>Leadership requires quick and informed decision-making. The ability to assess, adapt, and act decisively is a key leadership trait.</p>
+            </div>
+        </div>
